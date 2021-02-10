@@ -7,3 +7,4 @@ désinstaller tous les logiciels qui commencent par une certaine occurence sur l
 ## ranger_fichiers
 
 ranger tous les fichiers selon leur extention
+
