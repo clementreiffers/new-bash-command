@@ -35,7 +35,7 @@ do
 		fi
 		nbr_dieses=$(repeatChar $a)*.
 		directory=$(echo $a | sed 's/^.*\.//')
-		if [ $a != "ranger_fichiers.sh" ]; then
+		if [ $a != "ranger.sh" ]; then
 			create_dir $directory
 			mv $a ./$directory
 		fi

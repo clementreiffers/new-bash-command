@@ -4,9 +4,9 @@
 
 ## uwo
 
-désinstaller tous les logiciels qui commencent par une certaine occurence sur linux en utilisant apt
+-    désinstaller tous les logiciels qui commencent par une certaine occurence sur linux en utilisant apt
 
 ## ranger_fichiers
 
-ranger tous les fichiers selon leur extention
-remplace tous les espaces par des underscores
+-    ranger tous les fichiers selon leur extention
+-    remplacer tous les espaces par des underscores
