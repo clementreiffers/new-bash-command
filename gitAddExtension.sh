@@ -8,17 +8,6 @@ usage ()
 	echo "-R --recursive (seek subdirectories recursively)"
 }
 
-recherche ()
-
-{
-	for fichier in rechercheFichier
-	do
-		echo "test"
-		#Faire un if avec regex
-		#if [ $fichier == "*?\.$extension$"
-	done
-}
-
 option=0
 rechercheFichier=`ls`
 
@@ -42,12 +31,26 @@ else
 		esac
 	fi
 	
-#	if [ $option == 0 ] 
-#	then
-		#Gestion dans le cas ou option=0
-#	else
-		#Gestion dans le cas ou option=1
-#	fi
+	if [ $option == 0 ] 
+	then
+		for fichier in $rechercheFichier
+		do
+			if [[ $fichier =~ ^.*\.${1}$ ]]
+			then
+				echo "git add $fichier"
+				git add $fichier
+			fi
+		done
+	else
+		for fichier in $rechercheFichier
+		do
+			if [[ $fichier =~ ^.*\.${2}$ ]]
+			then
+				echo "git add $fichier"
+				git add $fichier
+			fi
+		done
+	fi
 fi
 
-return 0	
+exit 0	
