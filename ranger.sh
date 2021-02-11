@@ -30,7 +30,7 @@ do
 	if [ -f "$FILE" ]; then
 		# on supprime les espaces du nom de fichier pour que ça soit plus pratique à l'avenir
 		a=$(echo $FILE | tr "[:blank:]" "_")
-		if ! [ $a == $FILE ]; then
+		if ! [ "$a" == "$FILE" ]; then
 			mv "$FILE" $a
 		fi
 		nbr_dieses=$(repeatChar $a)*.
