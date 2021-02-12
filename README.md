@@ -10,3 +10,7 @@
 
 -    ranger tous les fichiers selon leur extention
 -    remplacer tous les espaces par des underscores
+
+## gabe (git Add By Extension)
+
+- Effectue la commande "git add" sur tous les fichiers du répertoire courant portant les extensions envoyés en paramètre.
